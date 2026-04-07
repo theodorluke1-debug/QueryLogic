@@ -579,7 +579,7 @@ const S = {
 };
 
 /* ==== SUPABASE CLIENT ============================ */
-const IS_OK = !SUPABASE_ANON_KEY.includes('PASTE_YOUR');
+const IS_OK = !SUPABASE_ANON_KEY.includes('sb_publishable_xbdT5jumnRVp4KdZs3nI0w_QvzwV172');
 const sb = IS_OK ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : {
   auth:{
     getSession:async()=>({data:{session:null}}),
